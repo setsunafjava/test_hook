@@ -21,7 +21,7 @@ const options = {
   , rejectUnauthorized: true
 };
 
-const port = process.env.SHOPIFY_APP_PORT || '3000';
+const port = process.env.SHOPIFY_APP_PORT || '443';
 app.set('port', port);
 
 // const server = http.createServer(app);
