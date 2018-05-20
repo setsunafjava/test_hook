@@ -25,11 +25,11 @@ const options = {
   , rejectUnauthorized: true
 };
 
-const port = process.env.SHOPIFY_APP_PORT || '443';
+const port = process.env.SHOPIFY_APP_PORT || '3000';
 app.set('port', port);
 
-// const server = http.createServer(app);
-const server = https.createServer(options,app);
+const server = http.createServer(app);
+// const server = https.createServer(options,app);
 server.listen(port, err => {
   if (err) {
     return console.log('😫', chalk.red(err));
