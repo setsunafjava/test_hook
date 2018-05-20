@@ -4,6 +4,8 @@ const chalk = require('chalk');
 const http = require('http');
 const app = require('../server');
 const https = require('https');
+const path = require('path');
+
 const certsPath = path.join(__dirname, '../certs2', 'server');
 const caCertsPath = path.join(__dirname, '../certs2', 'ca');
 
