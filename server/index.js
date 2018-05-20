@@ -34,7 +34,7 @@ const shopifyConfig = {
     const { session: { accessToken, shop } } = request;
 
     registerWebhook(shop, accessToken, {
-      topic: 'orders/create',
+      topic: 'app/uninstalled',
       address: `${SHOPIFY_APP_HOST}/order-create`,
       format: 'json'
     });
